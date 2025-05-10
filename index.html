@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VesniFlix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 VesniFlix</h1>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search titles..." />
+      <button onclick="surpriseMe()">🎲 Surprise Me</button>
+      <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <section id="genre-filters">
+    <button onclick="filterGenre('all')">All</button>
+    <button onclick="filterGenre('action')">Action</button>
+    <button onclick="filterGenre('comedy')">Comedy</button>
+    <button onclick="filterGenre('thriller')">Thriller</button>
+  </section>
+
+  <main id="movie-grid"></main>
+
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
